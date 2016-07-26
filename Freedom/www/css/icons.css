@@ -1,0 +1,82 @@
+.list.image .icon {
+	top: 10px;
+
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+}
+.icon.image {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size:contain;
+}
+.icon.small {
+	width: 24px;
+    height: 24px;
+    opacity: 0.5;
+}
+
+.icon-beach {
+	background-image: url(../img/icons/beach.svg);
+}
+.icon-water {
+	background-image: url(../img/icons/water.svg);	
+}
+.icon-walking {
+	background-image: url(../img/icons/walking.svg);
+}
+.icon-ball {
+	background-image: url(../img/icons/ball.svg);
+}
+.icon-driving {
+	background-image: url(../img/icons/driving.svg);
+}
+.icon-cycling {
+	background-image: url(../img/icons/cycling.svg);
+}
+.icon-air {
+	background-image: url(../img/icons/air.svg);
+}
+
+.icon-volleyball{
+ background-image: url(../img/icons/volleyball.svg);
+ }
+
+  .icon-petanque{
+ background-image: url(../img/icons/petanque.svg);
+   }
+  .icon-sunbathing{
+ background-image: url(../img/icons/sunbathing.svg);
+ }
+  .icon-swimming{
+ background-image: url(../img/icons/swimming.svg);
+ }
+  .icon-snorkelling{
+ background-image: url(../img/icons/snorkelling.svg);
+ }
+  .icon-rockpooling{
+ background-image: url(../img/icons/rockpooling.svg);
+ }
+  .icon-fishing{
+ background-image: url(../img/icons/fishing.svg);
+ }
+  .icon-barbecue{
+ background-image: url(../img/icons/barbecue.svg);
+ }
+  .icon-sandcastles{
+ background-image: url(../img/icons/sandcastles.svg);
+ }
+ .icon-scubadiving{
+ 	background-image: url(../img/icons/scubadiving.svg);
+ }
+ .icon-diving{
+ 	background-image: url(../img/icons/diving.svg);
+ }
+ .icon-cliffdiving{
+ 	background-image: url(../img/icons/cliffdiving.svg);
+ }
+
+ .icon-bomb {
+ 	 background-image: url(../img/icons/bomb.svg);
+ }

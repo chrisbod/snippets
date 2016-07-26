@@ -1,0 +1,39 @@
+.iconic {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 20%;
+}
+.iconic .item {
+    height: 24vw;
+    max-width: 10em;
+    border: none;
+    padding: 1em;
+
+}
+.iconic .item.full {
+	width:100%;
+	max-width:100%;
+}
+.list.image.iconic .icon {
+	position: static;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconic .item-icon-left {
+	
+}
+.list.image.iconic .label {
+	width: 100%;
+    display: block;
+    text-align: center;
+    overflow-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 1ex;
+}
+
+}
