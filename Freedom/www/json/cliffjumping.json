@@ -1,0 +1,17 @@
+{
+	"activity": "Cliff jumping",
+	"icon": "cliffjumping",
+	"location": {
+		"name": "Malama's beach",
+		"city": "Paralimni",
+		"countryCode": "CY",
+		"longlat": [35,34]
+	},
+	"distance": 1,
+	"rating": 3,
+	"shouts": [127,4],
+	"pictures": [268,22],
+	"videos": [20,2],
+	"audio": [2,0],
+	"activities": [15,5]
+}

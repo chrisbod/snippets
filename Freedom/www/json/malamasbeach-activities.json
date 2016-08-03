@@ -1,0 +1,22 @@
+[
+{
+	"name": "Cliff Diving",
+	"icon": "cliffdiving",
+	"rating": 5,
+	"shouts": [77,6]
+}
+,
+{
+	"name": "Sunbathing",
+	"icon": "sunbathing",
+	"rating": 4,
+	"shouts": [56,4]
+}
+,
+{
+	"name": "Fishing",
+	"icon": "fishing",
+	"rating": -1,
+	"shouts": [6,0]
+}
+]

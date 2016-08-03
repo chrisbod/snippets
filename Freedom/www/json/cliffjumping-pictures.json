@@ -1,0 +1,19 @@
+[
+	{
+		"thumb": "img/thumbs/thumb1.jpg",
+		"src": "img/images/image1.jpg"
+	},
+	{
+		"thumb": "img/thumbs/thumb2.jpg",
+		"src": "img/images/image2.jpg"
+	},
+	{
+		"thumb": "img/thumbs/thumb3.jpg",
+		"src": "img/images/image3.jpg"
+	},
+	
+	{
+		"thumb": "img/thumbs/thumb.jpg",
+		"src": "img/images/image.jpg"
+	}
+]

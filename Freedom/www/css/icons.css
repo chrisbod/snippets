@@ -6,10 +6,25 @@
     height: 32px;
     background-size: contain;
 }
-.icon.image {
+.icon-right {
+  float: right;
+}
+.button .icon:before, .button.icon:before, .button.icon-left:before, .button.icon-right:before {
+
+    text-align: center;
+    width: 1em;
+
+  }
+
+  .icon.image {
+  
   background-repeat: no-repeat;
   background-position: 50%;
   background-size:contain;
+  font-size: 32px;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
 }
 .icon.small {
 	width: 24px;
@@ -79,4 +94,57 @@
 
  .icon-bomb {
  	 background-image: url(../img/icons/bomb.svg);
+ }
+ .icon-mountains {
+   background-image: url(../img/icons/mountains.svg);
+ }
+  .icon-forests {
+   background-image: url(../img/icons/forests.svg);
+ }
+ .icon-location {
+   background-image: url(../img/icons/location.svg);
+ }
+  .icon-activity {
+   background-image: url(../img/icons/activity.svg);
+ }
+ .icon-terrain {
+   background-image: url(../img/icons/terrain.svg);
+ }
+
+
+.icon-africa {
+   background-image: url(../img/icons/africa1.svg);
+ }
+.icon-antarctica{
+   background-image: url(../img/icons/antarctica1.svg);
+ }
+
+  .icon-asia{
+   background-image: url(../img/icons/asia1.svg);
+ }
+
+  .icon-oceania{
+   background-image: url(../img/icons/oceania1.svg);
+ }
+
+  .icon-europe {
+   background-image: url(../img/icons/europe1.svg);
+ }
+  .icon-northamerica{
+   background-image: url(../img/icons/northamerica.svg);
+ }
+.icon-southamerica{
+   background-image: url(../img/icons/southamerica1.svg);
+ }
+ .icon-indoor{
+   background-image: url(../img/icons/indoor.svg);
+ }
+ .icon-sortorder{
+   background-image: url(../img/icons/sortorder.svg);
+ }
+  .icon-misbehaving{
+   background-image: url(../img/icons/misbehaving.svg);
+ }
+   .icon-other{
+   background-image: url(../img/icons/other.svg);
  }

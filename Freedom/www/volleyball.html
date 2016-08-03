@@ -20,7 +20,12 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+<script>
 
+function updateMedia(event) {
+  console.log(event)
+}
+</script>
     <style>
 
     </style>
@@ -42,17 +47,21 @@
       </label>
     <div class="item range">
       <span class="input-label bold">RATING</span>
-      <span class="range-output"><output>1</output><i class="icon ion-android-star"></i></span>
+      <span class="range-output"><output>1</output><i class="icon ion-android-star energized"></i></span>
       <!--i class="icon ion-thumbsdown"></i-->
       <input type="range" name="rating" min="0" value="1" max="5" step="1" oninput="this.parentNode.querySelector('output').textContent=this.value">
       <!--i class="icon ion-thumbsup"></i-->
-      
+      <span class="weather">
+    <span><span>32</span>℃</span>
+    <i  class="icon image"  style="background-image: url(&quot;http://cdn.apixu.com/weather/64x64/day/116.png&quot;);"></i>
+
+    </span>
     </div>
   
   <label class="item item-input item-stacked-label">
     <span class="input-label bold">PICTURES VIDEO AUDIO</span>
     <div class="media">
-    <input type="file" class="add-media">
+    <input type="file" class="add-media" onchange="updateMedia(arguments[0])">
     </div>
   </label>
   <label class="item item-input">

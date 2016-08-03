@@ -6,7 +6,7 @@
     flex-basis: 20%;
 }
 .iconic .item {
-    height: 24vw;
+    height: 78px;
     max-width: 10em;
     border: none;
     padding: 1em;
@@ -16,6 +16,11 @@
 	width:100%;
 	max-width:100%;
 }
+.iconic .item.large {
+    width:100%;
+    max-width: 256px;
+}
+
 .list.image.iconic .icon {
 	position: static;
     width: 100%;

@@ -1,0 +1,109 @@
+{"name": "What do you want to do?",
+"children": [
+  {
+    "name": "Beach",
+    "icon": "beach",
+    "children": [
+        {
+      "name": "Volleyball",
+      "icon": "volleyball"
+      },
+      {
+      "name": "Petanque",
+      "icon": "petanque"
+      },
+      {
+      "name": "Sunbathing",
+      "icon": "sunbathing"
+      },
+      {
+      "name": "Swimming",
+      "icon": "swimming"
+      },
+      {
+      "name": "Snorkelling",
+      "icon": "snorkelling"
+      },
+      {
+      "name": "Rockpooling",
+      "icon": "rockpooling"
+      },
+      {
+      "name": "Fishing",
+      "icon": "fishing"
+      },
+      {
+      "name": "Barbecue",
+      "icon": "barbecue"
+      },
+      {
+      "name": "Sandcastles",
+      "icon": "sandcastles"
+      },
+      {
+      "name": "Diving",
+      "icon": "diving"
+      },
+      {
+      "name": "Kiting",
+      "icon" : "kite"
+
+      }
+      {
+      "name": "Cliff Diving",
+      "icon": "cliffdiving"
+      },
+      {
+      "name": "Scuba Diving",
+      "icon": "scubadiving"
+      },
+      {
+      "name": "Misbehaving",
+      "icon": "misbehaving"
+      },
+      {
+      "name": "Other",
+      "icon": "other"
+      }
+    ]
+  },
+  {
+    "name": "Water",
+    "icon": "water",
+    "children": [
+
+    ]
+  },
+  {
+    "name": "Walking",
+
+    "icon": "walking",
+    "children": [
+
+    ]
+  },
+  {
+    "name": "Ball sports",
+
+
+    "icon": "ball",
+    "children": []
+  },
+  {
+    "name": "Driving",
+    "icon": "driving",
+    "children": []
+  },
+  {
+    "name": "Cycling",
+    "icon": "cycling",
+    "children": []
+  },
+  {
+  "name": "Air Sports",
+  "icon": "air",
+  "children": []
+  }
+
+]
+}

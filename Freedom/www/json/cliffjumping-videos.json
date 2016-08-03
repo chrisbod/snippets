@@ -1,0 +1,11 @@
+[
+	{
+		"thumb": "img/thumbs/thumb1.jpg",
+		"src": "img/images/image1.jpg"
+	},
+	
+	{
+		"thumb": "img/thumbs/thumb.jpg",
+		"src": "img/images/image.jpg"
+	}
+]

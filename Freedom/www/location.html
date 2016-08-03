@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+<link href="css/icons.css" rel="stylesheet">
+<link href="css/iconic.css" rel="stylesheet">
+<link href="fonts/countries.css" rel="stylesheet">
+<link href="lib/flag-icon-css-master/css/flag-icon.min.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+    <script src="js/lib/gmaps.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/location.js"></script>
+<script src="js/gmapshelper.js"></script>
+    <style>
+
+    </style>
+    <!--script>
+    addEventListener("load", function () {
+      var controlDiv = document.querySelector("#regions");
+      controlDiv.addEventListener("click", function (event) {
+        if (event.target == this) return
+        var target = event.target.tagName == "A" ? event.target : event.target.parentNode;
+        var text = target.innerText.toLowerCase().trim().replace(/\s*/g,'')
+        
+        helper.fitToBounds(map,text)
+        //map.setCenter(9.468994, 20.602580);
+      })
+
+var map = new GMaps({
+  div: '#gmap',
+    lat: -12.043333,
+  lng: -77.028333
+});
+var helper = new GMapsHelper()
+GMaps.geolocate({
+  success: function(position) {
+    map.setCenter(position.coords.latitude, position.coords.longitude);
+    map.addMarker({
+  lat: position.coords.latitude,
+  lng: position.coords.longitude,
+  click: function () {
+    map.setZoom(10)
+    map.setCenter(position.coords.latitude, position.coords.longitude);
+  }
+});
+    helper.showWorld(map)
+  },
+  error: function(error) {
+    //alert('Geolocation failed: '+error.message);
+  },
+  not_supported: function() {
+    //alert("Your browser does not support geolocation");
+  },
+  always: function() {
+    //alert("Done!");
+  }
+});
+
+    })
+
+    </script-->
+  </head>
+  <body ng-app="shout">
+
+    <ion-pane ng-controller="location">
+      <ion-header-bar class="bar-stable">
+        <h1 class="title"><a href="index.html"><i class="logo"></i></a><strong>WHERE DO YOU WANT TO GO?</strong></h1>
+      </ion-header-bar>
+      <div class="tabs top tabs-icon-top">
+          <a class="tab-item">
+          <i class="icon image icon-terrain"></i>
+            By Terrain
+          </a>
+          <a class="tab-item activated" href="location.html">
+          <i class="icon image icon-location"></i>
+            By Location
+          </a>
+          <a class="tab-item" href="activity.html">
+          <i class="icon image icon-activity"></i>
+            By Activity
+          </a>
+        </div>
+        <div id="gmap" style="position: absolute; top: 76px;margin: 8vw;overflow:hidden;height: 55vw;width: 85vw;"></div>
+      <ion-content style="top: 87vw;">
+      
+      
+      <div id="regions" class="list image iconic" ng-if="displayMode=='continents'" >
+        <a ng-repeat="continent in continents" class="item item-icon-left" ng-click="showContinent(continent)">
+        
+    <i class="icon" ng-class="'icon-'+continent.className"></i>
+    <span class="label" ng-bind="continent.name"></span>
+  </a>
+
+      </div>
+      <div id="countries" class="list image" ng-if="displayMode=='countries'">
+      <a ng-repeat="country in countries" class="item item-icon-left" ng-click="showCountry(country)">
+        
+    <i class="icon image flag-icon" ng-class="'flag-icon-'+country.code.toLowerCase()"></i>
+    <span class="label" ng-bind="country.name"></span>
+    <i class="icon-right" ng-class="'flaticon-'+country.name.toLowerCase()"></i>
+    </a>
+      </div>
+  </ion-content>
+    </ion-pane>
+
+
+  </body>
+</html>

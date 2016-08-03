@@ -1,3 +1,4 @@
+    
     .has-header.tabular {
 position: absolute;
     display: table;
@@ -26,11 +27,11 @@ position: absolute;
     top: 4px;
 	}
     
-    i.logo {
+    .logo {
     	display: inline-block;
     	width: 1.1ex;
     }
-    i.logo:before {
+    .logo:before {
     	content: '';
     display: inline-block;
     width: 36px;
@@ -44,33 +45,45 @@ position: absolute;
     background-position: center;
     }
 
-    #shout, #find {
-      display: table-row;
-      height: 50%;
-      width: 100%;
-      font-size: 40px;
-      text-align: center;
-      vertical-align: middle;
-
+    .bubble {
+    position: absolute;    
+    border: 1px solid silver;
+    border-radius: 50%;
+    width: 44vw;
+    height: 44vw;
+    line-height: 39vw;
+    display: block;
+    margin: auto;
+    background-color: rgba(255,255,255,0.5);
+    font-size: 32px;
+    text-align: center;
     }
-
     
-    #shout > a, #find > a {
-      vertical-align: middle;
-      text-align: center;
-      display: table-cell;
-      text-decoration: none;
 
+    .bubble > a {
+        text-decoration: none;
     }
-    #shout > a strong, #find > a > strong {
-      border: 1px solid silver;
-      border-radius: 50%;
-      width: 50vw;
-      height: 50vw;
-      line-height: 46vw;
-      display: block;
-      margin: auto;
-      background-color: rgba(255,255,255,0.5);
+
+    .bubble > a strong {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    line-height: 40vw;
+    display: block;
+    margin: auto;
+}
+#shout {
+        top: 13vh;
+    left: 5vw;
+}
+    
+    #suggest {
+       top: 65vh;
+    left: 15vw;
+    }
+    #search {
+            top: 20vh;
+    left: 55vw;
     }
     .bar.bar-stable {
       background-color: transparent;
@@ -82,7 +95,7 @@ position: absolute;
     height: 60vw;
     border-radius: 50%;
     left: 50%;
-    top: 50%;
+    top: 55%;
     margin-left: -30%;
     margin-top: -30%;
     background-color: #eeeeee;
@@ -285,4 +298,52 @@ div.header-divider {
     position: relative;
     }
 
+    .tabs.top {
+     top: 44px;
+    }
+    .tabs.top + ion-content {
+        top: 88px;
+    }
+
+    .tabs .tab-item.activated {
+        font-weight: bold;
+    }
+
+    span.weather {
+        display: inline-block;
+        width: 60px;
+    }
+    span.weather .icon {
+        
+    }
+    .static {
+        position: static;
+    }
+    .logo.map {
+        float: right;
+        position: relative;
+        background-color: #a3ccff;
+        border-radius: 50%;
+        width: 1.5em;
+        height: 1.5em;
+    }
+    .logo.map:before {
+        font-size: 1em;
+        width: 2.5em;
+        margin-left: -0.5em;
+        height: 1.5em;
+    }
+    .imageView .headerView,
+    .imageView .listContainer {
+    background-color: transparent !important;
+}
+
+[ng-controller=activity-place] ~ .modal-backdrop {
+    top: 88px;
+    bottom: 0px;
+    height: auto;
+}
+.small {
+    font-size: 80%;
+}
 
