@@ -27,11 +27,31 @@
     </style>
   </head>
   <body ng-app="shout">
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '932218133573429',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "http://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
     <div ng-controller="weather" class="weather">
     <span ng-bind="temperature"></span>&#8451;<br>
     <i ng-if="icon" class="icon image" ng-style="{'background-image': 'url('+icon+')'}"></i>
 
+
+
+
+<button ng-click="post()"></button>
     </div>
 
   </body>
