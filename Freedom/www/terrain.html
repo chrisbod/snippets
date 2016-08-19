@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    
+<!--
+  World Lakes: 1293,
+
+
+
+-->
+    <script>
+    angular.module('shout', ['ionic']).controller('terrain', function ($scope,$http) {
+
+
+
+        $scope.output = "output";
+        $scope.url = ''
+
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var x = position.coords.latitude,
+              y = position.coords.longitude,
+              url = 'http://localhost:3333/api/vectorQuery.json/?key=bb13a69455a04ec6adc478d424098778&layer=1293&x='+x+'&y='+y+'&radius=100000';
+            $http({url:url}).success(function (data) {
+              $scope.url = url;
+          $scope.output=JSON.stringify(data,true,4)
+        })
+});
+      /*  */
+    } );
+    </script>
+  </head>
+  <body ng-app="shout">
+    <div ng-controller="terrain">
+    <div ng-bind="url"></div>
+    <div ng-bind="output" style="white-space:pre"></div>
+    </div>    
+  
+
+  </body>
+</html>

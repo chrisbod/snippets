@@ -8,6 +8,7 @@
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 <link href="css/icons.css" rel="stylesheet">
+<link href="fonts/icons/style.css" rel="stylesheet">
 <link href="css/iconic.css" rel="stylesheet">
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -15,6 +16,8 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <link href="lib/ion-gallery/ion-gallery.css" rel="stylesheet">
+<script src="lib/ion-gallery/ion-gallery.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -33,7 +36,7 @@
         <h1 class="title"><strong ng-click="backCategory()"><i class="ion-arrow-left-b"></i> <span ng-bind="title"></span></strong><a href="index.html"><i class="logo"></i></a></h1>
       </ion-header-bar>
       <ion-content>
-     <div class="list image iconic">
+     <div class="list iconic image">
 <!--
 Mountains
 Forest
@@ -52,11 +55,11 @@ Ball sports
 
 -->
   <a ng-if="currentCategory" class="item item-icon-left">
-    <i class="icon" ng-class="'icon-'+currentCategory.icon"></i>
+    <i class="icon royal" ng-class="'icon-'+currentCategory.icon"></i>
     <span class="label"><span ng-bind="currentCategory.name"></span> Stuff</span>
   </a>
   <a ng-repeat="category in categories" class="item item-icon-left" ng-click="selectCategory(category)">
-    <i class="icon" ng-class="'icon-'+category.icon"></i>
+    <i class="icon royal" ng-class="'icon-'+category.icon"></i>
     <span class="label" ng-bind="category.name"></span>
   </a>
 

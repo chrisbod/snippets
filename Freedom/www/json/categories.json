@@ -48,13 +48,13 @@
       "name": "Kiting",
       "icon" : "kite"
 
-      }
+      },
       {
-      "name": "Cliff Diving",
+      "name": "Cliffjumping",
       "icon": "cliffdiving"
       },
       {
-      "name": "Scuba Diving",
+      "name": "Scubadiving",
       "icon": "scubadiving"
       },
       {
@@ -100,7 +100,7 @@
     "children": []
   },
   {
-  "name": "Air Sports",
+  "name": "Air sports",
   "icon": "air",
   "children": []
   }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+<link href="css/icons.css" rel="stylesheet">
+<link href="fonts/icons/style.css" rel="stylesheet">
+
+<link href="css/iconic.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <link href="lib/ion-gallery/ion-gallery.css" rel="stylesheet">
+    <script src="lib/ion-gallery/ion-gallery.js"></script>
+
+    <script>
+    shout.config(function($stateProvider, $urlRouterProvider) {
+        $stateProvider
+            .state('shout', {
+                url: '/shout',
+                templateUrl: 'templates/shout.html',
+                controller: 'shout-controller'
+            })
+            /*.state('users', {
+                url: '/users',
+                templateUrl: 'templates/users.html',
+                controller: 'UserController'
+            })*/
+            .state('shoutit', {
+                url: "/shoutit/:icon&:name",
+                templateUrl: "templates/shoutit.html",
+                controller: "shoutit-controller"
+              });
+       $urlRouterProvider.otherwise('/');
+    });
+    </script>
+    <script src="js/controllers/shout-controller.js"></script>
+    <script src="js/controllers/shoutit-controller.js"></script>
+  </head>
+  </head>
+  <body ng-app="shout">
+
+    
+     
+      <ion-nav-view>
+        <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">FREE<i class="logo"></i>DOM</h1>
+      </ion-header-bar>
+      <div>
+      <div class="has-header tabular">
+      <div id="shout" class="bubble">
+        <a href="#/shout"><strong>shout</strong></a>
+      </div>
+      <div id="map-window">
+      </div>
+      <div id="search" class="bubble">
+        <a href="search.html"><strong>search</strong></a>
+      </div>
+      <div id="suggest" class="bubble">
+        <a href="suggest.html"><strong>suggest</strong></a>
+      </div>
+      </div>
+      </div>
+</ion-pane>
+      </ion-nav-view>
+    
+
+
+  </body>
+</html>

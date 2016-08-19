@@ -120,16 +120,17 @@ div.media {
 	position: relative;
     left: -4px;
 }
+
 input[type=file].add-media {
 	position: relative;
 	top: 2px;
 }
-    input[type=file].add-media,input[type=file].add-media:before {
+    div.media div.placeholder, input[type=file].add-media,input[type=file].add-media:before {
 
-    width: 24vw;
-    height: 24vw;
+    width: 23vw;
+    height: 23vw;
     
-    font-size: 24vw;
+    font-size: 23vw;
     font-weight: bold;
     color: #fff;
     background-color: #ccc;
@@ -141,6 +142,10 @@ input[type=file].add-media {
     display: block;
     float: left;
 }
+div.media div.placeholder {
+    background-color: transparent;
+    color: #999;
+}
 input[type=file].add-media:before {
 	content: '+';
 	position: absolute;
@@ -149,6 +154,13 @@ input[type=file].add-media:before {
 	margin: -4px;
 	border:2px solid white;
 	box-sizing: content-box;
+}
+.audio-thumb {
+        font-size: 11px;
+    line-height: 12px;
+    white-space: normal;
+    text-align: left;
+
 }
 section {
 	display: block;

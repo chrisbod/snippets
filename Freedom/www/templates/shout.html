@@ -1,0 +1,23 @@
+
+<ion-view title="shout">
+<ion-pane>
+    <ion-header-bar class="bar-stable">
+        <h1 class="title"><a href="#/"><i class="logo"></i></a><strong>WHAT ARE YOU DOING?</strong></h1>
+      </ion-header-bar>
+    <ion-content>
+        <div class="list image iconic">
+
+  <a ng-if="currentCategory" class="item item-icon-left" ng-click="selectCategory(currentCategory,true)">
+    <i class="icon royal" ng-class="'icon-'+currentCategory.icon"></i>
+    <span class="label"><span ng-bind="currentCategory.name"></span> Stuff</span>
+  </a>
+  <a ng-repeat="category in categories" class="item item-icon-left" ng-click="selectCategory(category)">
+    <i class="icon royal" ng-class="'icon-'+category.icon"></i>
+    <span class="label" ng-bind="category.name"></span>
+  </a>
+
+
+  </div>
+    </ion-content>
+    </ion-pane>
+</ion-view>

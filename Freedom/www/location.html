@@ -11,6 +11,7 @@
 <link href="css/iconic.css" rel="stylesheet">
 <link href="fonts/countries.css" rel="stylesheet">
 <link href="lib/flag-icon-css-master/css/flag-icon.min.css" rel="stylesheet">
+
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
@@ -19,6 +20,8 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
+    <link href="lib/ion-gallery/ion-gallery.css" rel="stylesheet">
+<script src="lib/ion-gallery/ion-gallery.js"></script>
     <script src="cordova.js"></script>
     <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
     <script src="js/lib/gmaps.js"></script>
@@ -102,7 +105,7 @@ GMaps.geolocate({
       <div id="regions" class="list image iconic" ng-if="displayMode=='continents'" >
         <a ng-repeat="continent in continents" class="item item-icon-left" ng-click="showContinent(continent)">
         
-    <i class="icon" ng-class="'icon-'+continent.className"></i>
+    <i class="icon balanced" ng-class="'icon-'+continent.className"></i>
     <span class="label" ng-bind="continent.name"></span>
   </a>
 
